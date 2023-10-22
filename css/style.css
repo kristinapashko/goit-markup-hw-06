@@ -43,7 +43,8 @@ body ul {
 
 .container {
   width: 100%;
-  max-width: 1158px;
+  max: width 320px;
+  /* max-width: 1158px; */
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -288,6 +289,19 @@ body ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+}
+
+.approach-icon-wrap {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
 }
 
 .benefit-text {
@@ -878,4 +892,37 @@ body ul {
 
 .terms-box-icon {
   display: inline-flex;
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    max-width: 318px;
+  }
+
+  .benefit-text {
+    font-weight: 500;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 16px;
+  }
+  .advantage-list {
+    gap: 24px;
+  }
+  .advantage-item {
+    min-width: 356px;
+    width: calc((100% - 24px) / 2);
+  }
+  .benefit-title {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1158px;
+  }
 }
